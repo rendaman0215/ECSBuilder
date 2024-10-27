@@ -32,7 +32,7 @@ go mod tidy
 
 ```bash
 go install github.com/rendaman0215/ECSbuilder
-ECSbuilder --template PATH-TO-TEMPLATE --env PATH-TO-ENV --output PATH-TO-OUTPUT_DIR
+ECSbuilder -i INPUT_FILES_DIR -t TEMPLATE_FILE -e ENV_VILE -o OUTPUT_FILE_NAME
 ```
 
 ### Command-line Options
