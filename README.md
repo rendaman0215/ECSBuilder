@@ -31,13 +31,15 @@ go mod tidy
 ## Usage
 
 ```bash
-go run main.go
+go install github.com/rendaman0215/ECSbuilder
+ECSbuilder --template PATH-TO-TEMPLATE --env PATH-TO-ENV --output PATH-TO-OUTPUT_DIR
 ```
 
 ### Command-line Options
 
 The following options are available when running the program:
 
+- `--input`, {`-i`} {default: `.`}: Path to the definition and env file input directory.
 - `--template`, {`-t`} (default: `sample/taskdef.template.json`): Path to the task definition template file.
 - `--env`, `-e` (default: `.env`): Path to the environment file containing variable values.
 - `--output`, `-o` (default: `taskdef.json`): Path to the output file for the generated task definition.
