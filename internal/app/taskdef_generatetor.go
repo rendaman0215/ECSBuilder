@@ -34,6 +34,8 @@ func GenerateTaskDefinition(templatePath, envFilePath, outputPath, inputDir stri
 			return fmt.Errorf("failed to get input: %v", err)
 		}
 		templatePath = fmt.Sprintf("%s/%s", inputDir, result)
+	} else {
+		templatePath = fmt.Sprintf("%s/%s", inputDir, templatePath)
 	}
 
 	if envFilePath == "" {
@@ -46,6 +48,8 @@ func GenerateTaskDefinition(templatePath, envFilePath, outputPath, inputDir stri
 			return fmt.Errorf("failed to get input: %v", err)
 		}
 		envFilePath = fmt.Sprintf("%s/%s", inputDir, result)
+	} else {
+		envFilePath = fmt.Sprintf("%s/%s", inputDir, envFilePath)
 	}
 
 	if outputPath == "" {
