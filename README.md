@@ -13,7 +13,7 @@ Allows users to specify template and environment file paths, as well as the outp
 1. Clone this repository:
 
 ```bash
-git clone <https://github.com/yourusername/ECSbuilder.git>
+git clone <https://github.com/rendaman0215/ECSbuilder.git>
 ```
 
 1. Navigate to the project directory:
